@@ -1,0 +1,58 @@
+ctrl + b enter terminal in sublime
+irb enter ruby terminal
+exit exit irb
+ctrl + l new line
+ctrl + x exit
+DRY don't repeat yourself
+
+Object-oriented programming (day 3)
+
+-OOD(design) is all about managing complexity
+-OOP is applying OOD to OOP
+
+Principles of OOP:
+1) Encapsulation
+2) Inheritance
+3) Polymorphism
+
+1) ENCAPSULATION
+
+A list of students has attributes/interactions:
+Attributes: no of students, the items themselves (NOUNS)
+Interactions (VERBS):
+Add students
+Remove students
+Sort students (by rank etc)
+
+Shopping list
+Attributes (NOUNS):
+No of items
+The items themselves
+Interactions (VERBS/ACTIONS):
+Add item
+Remove
+Sort
+
+We've *encapsulated* the things that make a list here.
+Encapsulation is taking attributes and interactions (things you can do to the list) and putting them together.
+
+Once created, you don't want to rewrite this recipe/list. You can implement it as much as possible, but you don't want tto either recreate it or even think about how it was created.
+
+You also don't want to allow anyone to change this list/object once created. It should be PROTECTED once created.
+
+We're encapsulating behaviour into an object, and hiding the complexity from the next layer up.
+
+We only care about the attributes that the user can SEE (i.e. breamaker example-the user settings are attributes, bute the machinery is HIDDEN and is an implementation detail).
+
+Encamsulation Summary:
+
+a) COmbining attributes and behaviour into a logical and reusable object
+b) Hiding the implementation of how it does what it does from the person on the outside (case around bread maker)
+c) It doesn't allow you to change anything -it protects the implementation from tinkering/changing
+
+Objects need to instantiate to turn blueprints into actionable objects
+
+Ruby uses constructors to initialize (__init__ in python)
+
+2 INHERITANCE
+
